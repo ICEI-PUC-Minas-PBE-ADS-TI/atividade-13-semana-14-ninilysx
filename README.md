@@ -9,10 +9,10 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações Gerais
 
-- Nome:
-- Matrícula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Nicole Vitória Santos
+- Matrícula: 926915 
+- Proposta de projeto escolhida: Confeitaria e doces.
+- Breve descrição sobre seu projeto: Um site para uma confeitaria que deseja vender seus doces, sobremesas e pães de forma online.
 
 **Print da tela com a implementação**
 

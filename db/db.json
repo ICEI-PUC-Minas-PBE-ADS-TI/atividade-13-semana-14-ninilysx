@@ -1,18 +1,193 @@
 {
-  "usuarios": [
+  "produtos": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "nome": "Cupcake de Morango",
+      "descCurta": "Um delicioso cupcake de morango, com massa fofinha de baunilha, recheio de geleia artesanal e cobertura aveludada!",
+      "descLonga": "O equilíbrio perfeito entre o doce marcante e o frescor autêntico da fruta. Este cupcake traz uma massa artesanal de baunilha texturizada e ultra úmida, recheada generosamente com uma geleia caseira cozida lentamente, feita inteiramente de morangos frescos e selecionados. Para finalizar com elegância, o topo recebe uma cobertura leve e cremosa de buttercream de morango natural, decorada artisticamente com um morango inteiro fresco no topo. Uma verdadeira explosão de sabores sofisticados a cada mordida.",
+      "imagem": "https://i.pinimg.com/736x/56/86/c0/5686c06a5dbf6179d7e0caae991f33d3.jpg",
+      "categoria": "Cupcakes",
+      "preco": 12.50,
+      "tags": ["morango", "artesanal", "frutas"],
+      "destaque": true      
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+    "id": 2,
+    "nome": "Cupcake de Brigadeiro Belga",
+    "descCurta": "Um delicioso cupcake de chocolate, com recheio e cobertura de brigadeiro gourmet!",
+    "descLonga": "A escolha definitiva para os chocólatras. Combinamos uma massa escura de cacau 50%, surpreendentemente úmida e fofinha, a um recheio denso de brigadeiro gourmet. No topo, uma generosa cobertura de ganache aveludada finalizada com raspas puras de chocolate belga ao leite que derretem na boca.",
+    "imagem": "https://i.pinimg.com/1200x/5b/c2/29/5bc22984a1e1c538d57d937b7981c0cc.jpg",
+    "categoria": "Cupcakes",
+    "preco": 11.90,
+    "tags": ["chocolate", "brigadeiro", "tradicional", "mais-vendidos"],
+    "destaque": false
+  },
+  {
+    "id": 3,
+    "nome": "Cupcake de Red Velvet",
+    "descCurta": "Um elegante cupcake red velvet, com recheio e cobertura de cream cheese!",
+    "descLonga": "O clássico americano transformado em uma experiência sofisticada. Este cupcake traz uma massa aveludada de cor vermelha intensa, incrivelmente leve e com um toque sutil de cacau puro. O miolo é generosamente preenchido e coroado com o nosso exclusivo frosting artesanal de cream cheese e baunilha de Madagascar, criando o contraste azedinho e cremoso perfeito. Para finalizar, salpicamos farelos finos do próprio bolo no topo.",
+    "imagem": "https://i.pinimg.com/1200x/fe/b1/b0/feb1b046b0b6da44bc2fab54f436f030.jpg",
+    "categoria": "Cupcakes",
+    "preco": 13.50,
+    "tags": ["red-velvet", "cream-cheese", "gourmet"],
+    "destaque": false
+  },
+  {
+    "id": 4,
+    "nome": "Fatia de Bolo de Limão Siciliano",
+    "descCurta": "Uma refrescante fatia de bolo de limão, com mousse leve e raspas frescas!",
+    "descLonga": "A sobremesa ideal para quem busca leveza e refrescância. Esta fatia traz uma massa amanteigada e perfumada, recheada com uma mousse ultra cremosa de limão siciliano que equilibra perfeitamente o azedinho da fruta com o doce do bolo. A cobertura é feita com um merengue suíço impecável, delicadamente tostado no maçarico e finalizado com raspas frescas para intensificar o aroma.",
+    "imagem": "https://i.pinimg.com/736x/86/f1/b1/86f1b1db4d2efa7b21f997ddf282c1a3.jpg",
+    "categoria": "Bolos e Fatias",
+    "preco": 14.50,
+    "tags": ["limao", "citrico", "fatia", "leve"],
+    "destaque": false
+  },
+  {
+    "id": 5,
+    "nome": "Brownie de Nutella",
+    "descCurta": "Um brownie super denso e molhadinho, com uma camada generosa de Nutella!",
+    "descLonga": "O autêntico brownie americano levado a outro patamar de sabor. Preparado com um blend de chocolate nobre meio amargo e muita manteiga, ele garante aquela casquinha craquelada irresistível por fora e um interior extremamente denso e úmido. Para coroar essa textura perfeita, espalhamos uma camada generosa e uniforme de Nutella pura e cremosa no topo.",
+    "imagem": "https://i.pinimg.com/736x/f7/b1/83/f7b1838452ca9a6f5b7ae4c2093c5356.jpg",
+    "categoria": "Brownies e Cookies",
+    "preco": 10.00,
+    "tags": ["chocolate", "brownie", "nutella", "mais-vendidos"],
+    "destaque": true
+  },
+  {
+    "id": 6,
+    "nome": "Cookie Triplo Chocolate",
+    "descCurta": "Um cookie artesanal crocante por fora, com gotas de três tipos de chocolate!",
+    "descLonga": "Assado diariamente para garantir o frescor perfeito. Seguindo a legítima receita de Nova York, nossa massa amanteigada de baunilha é estruturada para ficar crocante e dourada nas bordas, enquanto mantém o centro alto, macio e super macio. O grande diferencial está na quantidade generosa de gotas misturadas à massa: chocolate ao leite, chocolate meio amargo e pedaços de chocolate branco.",
+    "imagem": "https://i.pinimg.com/736x/5f/bb/96/5fbb96d09be0e941bab46ba9c394a8d5.jpg",
+    "categoria": "Brownies e Cookies",
+    "preco": 8.50,
+    "tags": ["cookie", "chocolate", "artesanal"],
+    "destaque": true
+  },
+  {
+    "id": 7,
+    "nome": "Tarta de Frutas Vermelhas",
+    "descCurta": "Uma delicada tortinha crocante, recheada com creme de baunilha e frutas frescas!",
+    "descLonga": "A combinação perfeita entre estética e sabor. Esta mini torta possui uma base de massa sablée super crocante e amanteigada, que derrete na boca. O interior é preenchido com um creme de confeiteiro leve e aveludado, decorado no topo com uma seleção caprichada de frutas vermelhas frescas, como morangos, amoras e mirtilos, finalizados com um brilho de geleia suave.",
+    "imagem": "https://i.pinimg.com/736x/02/f9/c3/02f9c3cae9133834423723c103ddbdce.jpg",
+    "categoria": "Doces Finos",
+    "preco": 14.90,
+    "tags": ["frutas", "doces-finos", "sobremesa", "leve"],
+    "destaque": true
+  },
+  {
+  "id": 8,
+  "nome": "Fatia de Torta Banoffee",
+  "descCurta": "Uma generosa fatia de torta de banana com doce de leite e cobertura de chantilly!",
+  "descLonga": "Uma das sobremesas mais desejadas das confeitarias, servida em uma fatia alta e imponente. Ela é estruturada sobre uma base crocante de massa amanteigada de biscoito, seguida por uma camada densa de doce de leite cozido de altíssima qualidade. Por cima, uma distribuição farta de bananas nanicas frescas, finalizada com uma nuvem leve de chantilly artesanal salpicada com cacau e canela em pó.",
+  "imagem": "https://i.pinimg.com/1200x/c7/67/63/c76763b72fe663f4b3fb3395d223e098.jpg",
+  "categoria": "Bolos e Fatias",
+  "preco": 14.90,
+  "tags": ["banana", "doce-de-leite", "fatia", "mais-vendidos"],
+  "destaque": false
+  },
+  {
+    "id": 9,
+    "nome": "Fatia de Cheesecake de Frutas Vermelhas",
+    "descCurta": "Uma fatia de cheesecake cremosa assada no forno, com calda artesanal de frutas!",
+    "descLonga": "Preparada seguindo a receita clássica estilo New York, esta sobremesa é assada lentamente no forno para garantir a textura ideal. Apresenta uma base fina e crocante de biscoito triturado, um corpo alto e denso feito à base de muito cream cheese e baunilha, e uma finalização generosa com nossa calda artesanal brilhante de morango, amora e framboesa.",
+    "imagem": "https://i.pinimg.com/736x/64/85/2d/64852d960a078422ae12912f97b03584.jpg",
+    "categoria": "Bolos e Fatias",
+    "preco": 16.90,
+    "tags": ["cheesecake", "frutas", "fatia", "gourmet"],
+    "destaque": false
+  },
+  {
+    "id": 10,
+    "nome": "Eclair de Baunilha (Bomba)",
+    "descCurta": "Uma clássica eclair de massa choux, recheada com creme de confeiteiro real!",
+    "descLonga": "Um clássico absoluto da pâtisserie francesa executado com perfeição. A massa choux é assada até ficar leve, dourada e perfeitamente oca por dentro para receber o recheio. O interior é completamente preenchido com um autêntico creme de confeiteiro aveludado, aromatizado com raspas de fava de baunilha real. A finalização é feita com uma glaçagem brilhante e firme de chocolate meio amargo.",
+    "imagem": "https://i.pinimg.com/736x/61/fb/86/61fb8647a7d8529cbac94c2c9faa3ea3.jpg",
+    "categoria": "Doces Finos",
+    "preco": 13.00,
+    "tags": ["doces-finos", "baunilha", "chocolate", "frances"],
+    "destaque": false
+  },
+  {
+  "id": "11",
+  "nome": "Fatia de Bolo de Chocolate de Três Andares",
+  "preco": 18.90,
+  "categoria": "Bolos",
+  "imagem": "https://i.pinimg.com/736x/6c/35/03/6c35034d5a16b160aa50d88a99942a49.jpg",
+  "descCurta": "Uma imponente fatia com três camadas de massa úmida de cacau e recheio cremoso.",
+  "descLonga": "Para os verdadeiros amantes de chocolate. Esta imponente fatia traz três camadas generosas de uma massa artesanal de cacau 50% ultra úmida e fofinha. Cada andar é intercalado com um recheio cremoso de brigadeiro gourmet tradicional e ganache de chocolate meio amargo para equilibrar o doce. Finalizado com uma calda brilhante de chocolate e granulados belgas por toda a lateral.",
+  "tags": ["chocolate", "artesanal", "gourmet", "bolo"]
+  },
+  {
+  "id": "12",
+  "nome": "Croissant Amanteigado",
+  "preco": 11.00,
+  "categoria": "Folhados",
+  "imagem": "https://i.pinimg.com/736x/fd/39/66/fd3966ba54cb69f31dd8b9a98d972a31.jpg",
+  "descCurta": "O autêntico folhado francês feito com pura manteiga, dourado e crocante.",
+  "descLonga": "O verdadeiro clássico da confeitaria francesa em sua forma mais pura. Este croissant traz a perfeição técnica de uma massa folhada desenvolvida com pura manteiga de alta qualidade. O resultado é um exterior incrivelmente dourado, folhado e crocante, que se desfaz em mil folhas a cada mordida, revelando um interior incrivelmente macio, aerado, leve e com o sabor marcante e sofisticado da manteiga.",
+  "tags": ["folhado", "manteiga", "tradicional", "artesanal"]
+}
+  ],
+  
+  "comentarios": [
+      {
+      "id": 1,
+      "produtoId": 1,
+      "usuario": "Mariana",
+      "nota": 5,
+      "texto": "O melhor cupcake de morango que já comi na vida! A geleia de dentro não é muito doce, o que deixa o bolo perfeito e nada enjoativo.",
+      "data": "2026-05-12"
+    },
+    {
+      "id": 2,
+      "produtoId": 1,
+      "usuario": "Liz",
+      "nota": 4,
+      "texto": "Massa super fofinha e entrega rápida. Só achei o buttercream um pouco delicado para os dias mais quentes, mas o sabor é incrível.",
+      "data": "2026-05-14"
+    },
+    {
+      "id": 3,
+      "produtoId": 2,
+      "usuario": "Ana Clara",
+      "nota": 5,
+      "texto": "Esse cupcake de brigadeiro belga é surreal! O recheio é super cremoso e as raspas de chocolate no topo fazem toda a diferença.",
+      "data": "2026-05-20"
+    },
+    {
+      "id": 4,
+      "produtoId": 3,
+      "usuario": "Malu",
+      "nota": 5,
+      "texto": "O Red Velvet é impecável. O frosting de cream cheese tem o azedinho na medida certa. Comprarei mais vezes com certeza!",
+      "data": "2026-05-22"
+    },
+    {
+      "id": 5,
+      "produtoId": 5,
+      "usuario": "Beatriz",
+      "nota": 4,
+      "texto": "O brownie de Nutella é bem denso e pesado, do jeito que eu gosto. Só achei um pouquinho doce demais para comer inteiro de uma vez.",
+      "data": "2026-06-02"
+    },
+    {
+      "id": 6,
+      "produtoId": 8,
+      "usuario": "Lizandra",
+      "nota": 5,
+      "texto": "A fatia de Banoffee é enorme e deliciosa! O doce de leite é suave e o chantilly com canela finaliza perfeitamente.",
+      "data": "2026-06-10"
+    },
+    {
+      "id": 7,
+      "produtoId": 6,
+      "usuario": "Bruna",
+      "nota": 5,
+      "texto": "Esse cookie é maravilhoso! Veio super quentinho e as bordas são crocantes enquanto o meio continua muito macio. A quantidade de chocolate é perfeita.",
+      "data": "2026-06-15"
     }
   ]
 }
