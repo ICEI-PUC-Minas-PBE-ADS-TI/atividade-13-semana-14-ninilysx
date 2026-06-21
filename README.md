@@ -17,7 +17,8 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 **Print da tela com a implementação**
 
 << Coloque aqui uma breve explicação da implementação feita nesta etapa>>
-
+Foi implementado dois gráficos utilizando a API do Chart.js. O primeiro gráfico é relacionado a quantidade de produtos por categoria existente na loja e o segundo é relacionado a quantas notas de cada quantidade (1 a 5 estrelas) os produtos da loja tem.
 <<  COLOQUE A IMAGEM DA TELA 1 AQUI >>
-
+![Primeira funcionalidade](./public/imagens/print-1.jpeg)
 <<  COLOQUE A IMAGEM DA TELA 2 AQUI >>
+![Segunda funcionalidade](./public/imagens/print-2.jpeg)
