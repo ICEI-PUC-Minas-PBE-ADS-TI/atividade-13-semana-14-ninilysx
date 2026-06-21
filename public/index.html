@@ -14,6 +14,22 @@
     </header>
     <main>
         <div id="tela">
+            <div id="local-api">
+                <div class="container">
+                <h2 id="titulo-grafico">Quantidade de produtos por categoria: </h2>
+                <div class="grafico">
+                    <canvas id="grafico"></canvas>
+                </div>
+                </div>
+
+                <div class="container">
+                <h2 id="titulo-grafico">Avaliações dos clientes: </h2>
+                <div class="grafico-notas">
+                    <canvas id="grafico-notas"></canvas>
+                </div>
+                </div>
+                
+            </div>
             <h2 id="vitrine">Vitrine de doces ୨ৎ</h2>
             <div id="container-doces">
                 <div id="card-individual">
@@ -21,7 +37,8 @@
             </div>
         </div>
     </main>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/scripts/home.js"></script>
 </body>
 
 </html>

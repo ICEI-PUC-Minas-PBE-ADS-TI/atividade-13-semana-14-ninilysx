@@ -52,3 +52,48 @@ async function carregarDetalhes() {
 }
 
 carregarDetalhes();
+
+ function pegarID() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('id');
+}
+
+async function carregarComentarios() {
+
+    const idProd = pegarID();
+
+    try{
+        const resposta = await fetch('http://localhost:3000/comentarios')
+        const comentarios = await resposta.json();
+
+        const comentariosFiltrados = comentarios.filter(c => c.produtoId == idProd);
+
+        const container = document.getElementById('comentarios');
+        container.innerHTML = '';
+
+        if (comentariosFiltrados.length === 0 ){
+            container.innerHTML = `<p class="aviso-det">Este produto ainda não recebeu avaliações!</p>`;
+            return;
+        }
+
+        comentariosFiltrados.forEach(comentario => {
+        const estrelas = "⚝".repeat(comentario.nota) 
+
+        const card = `
+        <div id="coment-individual">
+        <div class="header-coment">
+            <h4 class="nome-cliente">${comentario.usuario}</h4>
+            <span class="nota">${estrelas}</span>
+        </div>
+            <span class="coment-texto">${comentario.texto}</span>
+        </div>
+        `
+        container.innerHTML += card;
+    });
+    } catch (error){
+        console.error('Erro:', error)
+    }
+}
+
+window.addEventListener('DOMContentLoaded', carregarComentarios);
+

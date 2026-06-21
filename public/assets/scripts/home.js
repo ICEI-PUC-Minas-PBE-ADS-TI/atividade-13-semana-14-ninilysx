@@ -55,3 +55,153 @@ async function init() {
 
 init();
 
+async function createChart() {
+    try{
+        const resposta = await fetch('http://localhost:3000/produtos')
+        const produtos = await resposta.json();
+
+        // conta quantidade de produto por categoria
+
+        const countCat = {}
+
+        produtos.forEach(produto =>{
+            const categoria = produto.categoria;
+            if(countCat[categoria]){
+                countCat[categoria]++;
+            } else{
+                countCat[categoria] = 1;
+            }
+        });
+
+        const nomeCat = Object.keys(countCat);
+        const quantidades = Object.values(countCat);
+
+        const ctx = document.getElementById('grafico');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: nomeCat,
+                datasets: [{
+                    label: 'Total de produtos',
+                    data: quantidades,
+                    backgroundColor: [
+                        '#8E9546',
+                        '#BBCA6F',
+                        '#E9E29B',
+                        '#f7ddce',
+                        '#F1B4AF',
+                        '#DD8C96',
+                        '#A4565C'
+                    ], 
+                    hoverBackgroundColor: [
+                        '#8E9546',
+                        '#BBCA6F',
+                        '#E9E29B',
+                        '#f7ddce',
+                        '#F1B4AF',
+                        '#DD8C96',
+                        '#A4565C'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip:{
+                        enabled: true
+                    }
+                }
+            }
+        });
+    } catch (error){
+        console.error('Erro ao carregar gráfico: ', error)
+    }
+}
+
+createChart();
+
+async function createNotas() {
+    try{
+        const resposta = await fetch('http://localhost:3000/comentarios')
+        const comentarios = await resposta.json();
+
+        // conta quantidade de produto por categoria
+
+        const countNota = {
+            '1 Estrela': 0,
+            '2 Estrelas': 0,
+            '3 Estrelas': 0,
+            '4 Estrelas': 0,
+            '5 Estrelas': 0,
+        };
+
+        comentarios.forEach(comentario =>{
+            const nota = comentario.nota;
+            const chave = `${nota} Estrela${nota > 1 ? 's' : ''}`;
+
+            if(countNota[chave] !== undefined){
+                countNota[chave]++;
+            }
+        });
+
+        const nomeNota = Object.keys(countNota);
+        const quantidade = Object.values(countNota);
+
+        const ctx = document.getElementById('grafico-notas');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: nomeNota,
+                datasets: [{
+                    label: 'Total de produtos',
+                    data: quantidade,
+                    backgroundColor: [
+                        '#8E9546',
+                        '#BBCA6F',
+                        '#E9E29B',
+                        '#f7ddce',
+                        '#F1B4AF',
+                        '#DD8C96',
+                        '#A4565C'
+                    ], 
+                    hoverBackgroundColor: [
+                        '#8E9546',
+                        '#BBCA6F',
+                        '#E9E29B',
+                        '#f7ddce',
+                        '#F1B4AF',
+                        '#DD8C96',
+                        '#A4565C'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginsAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    } catch (error){
+        console.error('Erro ao carregar gráfico: ', error)
+    }
+}
+
+createNotas();

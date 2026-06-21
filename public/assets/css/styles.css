@@ -1,0 +1,286 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 245, 248);
+}
+
+header{
+    background-color: rgb(255, 222, 228);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nome-loja{
+    margin: 0;
+    padding: 20px 25px;
+    font-weight: 400;
+}
+
+#tela{
+    margin: 5px 30px;
+}
+
+#vitrine{
+    margin: 0 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+div#container-doces{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#card-individual{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 520px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 222, 228);
+}
+
+.img-doce{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body{
+    width: 100%;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+h4.nome{
+    margin: 0;
+}
+
+p.desc{
+    margin: 0;
+    margin-top: 10px;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+}
+
+p{
+    margin: 0;
+    margin-top: 5px;
+}
+
+div.card-body > div.categoria{
+    margin-top: auto;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+div.card-body > div.preco{
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+div.footer{
+    display: flex;
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(255, 238, 244);
+    border-radius: 10px;
+    align-items: center;
+    transition: transform 0.2s ease-in;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+
+/* detalhes */
+
+a.btn-det{
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    height: auto;
+    align-items: center;
+    background-color: rgb(255, 254, 255);
+    margin-left: 20px;
+}
+
+div#image-det > img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+div#image-det{
+    margin:  20px 25px;
+}
+
+div#tela-det{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 206, 214);
+    align-items: flex-start;
+    margin: 0 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+div#body-det{
+    width: auto;
+    height: auto;
+}
+
+.nome-det{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.preco-det{
+    font-size: 30px;
+}
+
+.categoria-det{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.desc-longa{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+    width: 90%;
+}
+
+div#array-tags{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+p.tag{
+    background-color: rgb(255, 235, 239);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.comprar{
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: rgb(255, 107, 156);
+    border-radius: 7px;
+    border: none;
+    font-size: 22px;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.comprar:hover{
+    background-color: rgb(242, 60, 121);
+    transform: scale(1.05);
+}
+
+.grafico{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+}
+.grafico-notas{
+    width: 500px;
+    height: 400px;
+    padding: 10px 15px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+
+#local-api{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    margin: 0 60px;
+}
+
+#titulo-grafico{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#comentarios{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    background-color: rgb(255, 239, 242);
+}
+
+.avaliacoes{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0 30px;
+    padding-top: 10px;
+    background-color: rgb(255, 239, 242);
+}
+
+h4.nome-cliente{
+    margin: 0;
+    font-size: 18px;
+    height: auto;
+}
+
+#coment-individual{
+    margin-top: 10px;
+    background-color: rgb(255, 220, 225);
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nota{
+    font-size: 18px;
+    margin: 0;
+}
+
+.header-coment{
+    margin-bottom: 10px;
+}
+
+.coment-texto{
+    font-size: 15px;
+}
